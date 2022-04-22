@@ -1,5 +1,47 @@
-.title {
-    font-size: 30px;
-    font-weight: bolder;
-    text-align: center;
+body {
+    background-color: #e4f3f5;
+    font-family: 'Times New Roman', Times, serif; /*чи можна так робити?*/
+    color: rgb(4, 40, 88);
 }
+
+.title {
+    /*color: rgb(11, 13, 53);*/
+    font-size: 37px;
+    /*font-family:'Times New Roman', Times, serif;*/
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+.personal-info, .education, .skills, .interest {
+    /*color: rgb(11, 13, 53);*/
+    font-size: large;
+    font-size: 25px;
+    line-height: normal;
+    font-weight: normal;
+    /*font-family: 'Times New Roman', Times, serif;*/
+}
+
+.data1, .data2, .data3, .data4 {
+    font-size: 20px;
+    line-height: normal;
+    font-weight: lighter;
+}
+
+.personal-info1, .education2, .skills1, .interest1, li
+/*.position1, .position2, .position3, .position4*/ {
+    font-size: 18px;
+}
+
+/*.image-wrap {
+    width: 1000px;
+    height: 4700px;
+    display: block;
+    margin: auto;
+    background-color: #edf7f6;
+}
+
+.image-center {
+    display: block;
+    margin: auto;
+}*/
