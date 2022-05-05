@@ -70,6 +70,9 @@ div .box + .box {
     color: #919299;
 }
 
+a {
+    text-decoration: none;
+}
 .box-link {
     font-family: 'Alata';
     font-style: normal;
@@ -78,22 +81,23 @@ div .box + .box {
     line-height: 30px;
     color: #FFFFFF;
     visibility: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 90px 0 0 0;
 }
 
 .box:hover {
     background-color: #F78CB6;
+    color: #FFFFFF;
     cursor: pointer;
     border-radius: 8px;
     height: 344px;
 }
 
-.box:active a {
+.box:hover a {
     visibility: visible;
     color: #FFFFFF;
 }
 
-.material-symbols-outlined:active, .box-title:active, .box-text:active {
-    color: #FFFFFF;
-}
 
 
