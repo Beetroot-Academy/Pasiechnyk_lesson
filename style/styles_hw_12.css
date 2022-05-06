@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F7F7F7;
+    font-family: 'Inter';
+}
+
+
+
+.container {
+    display: inline-block;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    width: 540px;
+    height: 590px;
+    margin-top: 20px;
+}
+
+.container + .container {
+    margin-left: 21px;
+}
+
+.title-container {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1C;
+    letter-spacing: -0.4px;
+}
+
