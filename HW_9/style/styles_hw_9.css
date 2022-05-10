@@ -1,0 +1,119 @@
+* {    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins';
+}
+/*header*/
+a {
+    text-decoration: underline;
+}
+
+header {
+    width: 90%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 58px 0 0 133px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #aaaaab;
+}
+
+.logo {
+    width: 106px;
+    height: 30px;
+}
+
+nav>ul>li {
+    display: inline-block;
+}
+
+li + li {
+    margin-left: 73px;
+}
+
+a:visited {
+    color: #AAAAAB;
+} /*я знаю що так не можна робити, 
+але я не розумію як я маю поставити основний колір #AAAAAB, 
+в мене автоматично він фіолетовий*/
+
+a:hover {
+    color: #56597A;
+    cursor: pointer;
+}
+
+/*main*/
+.section_main1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 200px 0 0 135px;
+}
+
+.section_main_img {
+    max-width: 100%;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #F78CB6;
+}
+
+h1::before {
+    content: '__ ';
+}
+
+h2 {
+    width: 85%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    color: #56597A;  
+    padding-top: 29px;
+}
+
+p {
+    width: 600px;
+    height: 105px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #919299;
+    padding-top: 31px;
+}
+
+button {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    background-color: #F78BB6;
+    border-radius: 4px;
+    border: #F78CB6;
+    color: #FFFFFF;
+    margin-top: 42px;  
+    padding: 18px;
+}
+
+
+
+
+
+
