@@ -11,15 +11,22 @@ a {
     text-decoration: underline;
 }
 
-header {
+.header {
     background-color: #FFFFFF;
-    width: 93%;
+    width: 90%;
     position: fixed;
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    padding: 50px 0 0 133px;
+    padding-top: 50px;
+}
+
+.logo {
+    margin: 0 0 0 190px;
+}
+
+nav>ul>li {
+    display: inline-block;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -27,40 +34,38 @@ header {
     color: #aaaaab;
 }
 
-.logo {
-    width: 106px;
-    height: 30px;
-}
-
-nav>ul>li {
-    display: inline-block;
-}
-
 li + li {
-    margin-left: 73px;
+    margin-left: 83px;
 }
 
-a:visited {
+nav a:visited {
     color: #AAAAAB;
 } /*я знаю що так не можна робити, 
 але я не розумію як я маю поставити основний колір #AAAAAB, 
 в мене автоматично він фіолетовий*/
 
-a:hover {
+nav a:hover {
     color: #56597A;
     cursor: pointer;
 }
 
 /*main*/
+/*Creative Agency*/
 .section_main1 {
+    width: 1530px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 200px 0 0 135px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.section_main_img {
+.first_section {
+    padding-top: 216px;
+}
+.first_section_img {
     max-width: 100%;
+    padding-top: 200px;
 }
 
 h1 {
@@ -111,6 +116,150 @@ button {
     margin-top: 42px;  
     padding: 18px;
 }
+
+/*Our Services*/
+
+.container-services {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second_section {
+    padding-top: 80px;
+}
+
+h3 {
+    font-family: 'Alata';
+    font-style: normal;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #F78CB6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 0 502px 0 502px;
+}
+
+h4 {
+    font-family: 'Alata';
+    font-style: normal;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 72px;
+    color: #56597A;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.services {
+    padding-top: 58px;    
+}
+
+.box {
+    display: inline-block;
+    background: #FFF1F9;
+    border-radius: 8px;
+    width: 270px;
+    height: 307px;
+    text-align: center;
+}
+
+.box + .box {
+    margin-left: 20px;
+}
+
+.box-icon {
+    color: #F78CB6;
+    width: 40px;
+    height: 40px;
+    padding-top: 56px;
+}
+
+.box-title {
+    font-family: 'Alata';
+    font-style: normal;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 72px;
+    color: #56597A;
+    text-align: center;
+}
+
+.box-text {
+    width: 224px;
+    height: 71px;
+    font-family: 'Mukta';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #919299;
+    padding: 0 23px 23px 23px;
+}
+
+.box-link {
+    font-family: 'Alata';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #FFFFFF;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.box:hover  {
+    background-color: #F78CB6;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 344px;
+}
+
+.box:hover .box-link {
+    visibility: visible;
+    color: #FFFFFF;
+}
+
+.box-icon:hover, .box-title:hover, .box-text:hover {
+    color: #FFFFFF;
+}
+
+.section_main1::after {
+    content: '';
+    background-size: cover;
+    background-image: url(/HW_9/assets/imeg/Vector.png);
+    width: 800px;
+    height: 700px;
+    display: block;
+    position: absolute;
+    right: -40px;
+    z-index: 1;
+}
+
+/*  можливо підкажеш як я маю правильно вставити цей вектор, 
+    щоб він прилипав до лівого краю
+
+
+    .container-services::before {
+    content: '';
+    position: sticky;
+    height: 330px;
+    width: 310px;
+    background-size: cover;
+    background-image: url(/HW_9/assets/imeg/Bloobs.png);
+    display: block;
+    top: 520px;
+    left: 0px;
+    z-index: 1;
+    margin-left: auto;
+}*/
+
 
 
 
