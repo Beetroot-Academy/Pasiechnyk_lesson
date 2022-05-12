@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/HW_12/style/resetcss/reset.css">
+    <link rel="stylesheet" href="/HW_12/style/styles_hw_12.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Almarai:wght@700;800&family=Inter:wght@400;600&family=Mukta&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <header></header>
+    <main class="main">
+        <section class="maine__wrapper">
+            <div class="firs__sectiom">
+                <h1>Create an Account</h1>
+                <form method="post">
+                    <div class="form__container">
+                        <div class="form_row">
+                            <label class="form_row__lable" for="firstname">First Name</label>
+                            <input class="form_row__input"type="text" name="firstname" id="firstname">
+                        </div>
+                        <div class="form_row">
+                            <label class="form_row__lable" for="lastname">Last Name</label>
+                            <input class="form_row__input" type="text" name="lastname" id="lastname">
+                        </div>
+                    </div>
+                    <div class="form__container">
+                        <div class="form_row">
+                            <label class="form_row__lable" for="email">E-mail</label>
+                            <input class="form_row__input" type="text" name="email" id="email">
+                            <p class="form_row__text">We'll never share your email with anyone else.</p>
+                        </div>
+                    </div>
+                    <div class="form__container">
+                        <div>
+                            <label class="form_row__lable">Male</label>
+                            <input class="form_row__input" type="radio" name="gender" value="male">
+                            <label class="form_row__lable">Female</label>
+                            <input class="form_row__input" type="radio" name="gender" value="Female">
+                        </div>
+                    </div>
+                    <div class="form__container">
+                        <div class="form_row">
+                            <label class="form_row__lable" for="country">Country</label>
+                            <select class="form_row__select" name="country" id="country">
+                                <option value="none" selected disabled>Select</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Germany">Germany</option>
+                            </select>
+                        </div>
+                        <div class="form_row">
+                            <label class="form_row__lable" for="city">City</label>
+                            <input class="form_row__input" type="text" name="city" id="city">
+                        </div>
+                    </div>
+                            <div>
+                                <input class="form_row__input" type="text" name="comments" id="comments">
+                            </div>     
+                                <p class="form_row__text">By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+                                <span class="log-in">Have an account?<a class="link log-in__link" href="#">Log In</a></span>
+                </form>   
+            </div>
+        </section>
+        <section class="maine__wrapper">
+            <div class="second__section">
+                <h2>Profile</h2>
+                <div class="form__container">
+                    <div>
+                        <img src="/HW_12/assets/imeg/📷 Image.jpg" alt="yourphoto">
+                    </div>
+                    <div>
+                        <label class="form_row__lable" for="inputphoto"></label>
+                        <input class="form_row__input" type="file" name="inputphoto" id="inputphoto">
+                        <button><span class="material-symbols-outlined">delete</span></button>
+                        <p class="form_row__text">Up to 1 MB (300x300 px)</p>
+                    </div>
+                </div>
+                <div class="form__container">
+                    <div>
+                        <label class="form_row__lable"for="name">Name</label>
+                        <input class="form_row__input" type="name" name="name" id="name">
+                    </div>
+                    <div>
+                        <label  class="form_row__lable"for="email">E-mail</label>
+                        <input class="form_row__input" type="text" name="email" id="email">
+                    </div>
+                </div>
+                <div class="form__container">
+                    <div>
+                        <label class="form_row__lable"for="country">Country</label>
+                        <select class="form_row__select" name="country" id="country">
+                            <option value="none" selected disabled>Select</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Germany">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form_row__lable"for="city">City</label>
+                        <input class="form_row__input" type="text" name="city" id="city">
+                    </div>
+                </div>
+                <div class="form__container">
+                    <div>
+                        <label class="form_row__lable" for="zip-code">Zip Code</label>
+                        <input class="form_row__input" type="zip-code" name="zip-code" id="zip-code">
+                    </div>
+                    <div>
+                        <label class="form_row__lable" for="phonenumber">Phone Number</label>
+                        <input class="form_row__input" type="phonenumber" name="phonenumber" id="phonenumber">
+                    </div>
+                    <div>
+                        <input class="form_row__input" type="text" name="comments" id="comments">
+                    </div>
+                </div>     
+            </div>
+        </section>
+    </main>
+</body>
+</html>
