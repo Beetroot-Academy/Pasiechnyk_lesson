@@ -1,0 +1,104 @@
+header {
+    width: 1400px;
+    height: 78px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.btn, .links  {
+    float: left;
+}
+
+.logo {
+    float: left;
+    padding: 22px 0 0 143.92px;
+}
+
+/*не можу зрозуміти як вирівняти вірно лішки*/
+li {
+    display: inline-block;
+    overflow: hidden;
+    padding: 24px;
+    color: #2f281e;
+    text-decoration: none;
+}
+
+/*не можу зрозуміти як зробити так щоб 
+ці кнопки не міняли колір одночасно дві, 
+а тільки та яку обираю*/
+.btn {
+    padding: 15px;
+}
+
+.btn a {
+    display: inline-block;
+    background-color: #FF9900;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 11px 23px 11px 25px;
+}
+
+.btn:hover a {
+    background-color: white;
+    color: #173A56;    
+}
+
+.btn a + a {
+    margin-left: 14px; 
+}
+
+/*main*/
+
+main {
+    width: 1125.35px;
+    height: 494.83px;
+    margin: auto;
+    padding-top: 128px;
+}
+
+.image-main {
+    float: right;
+}
+
+.main-content h1 {
+    color: #2F281E;
+    font-size: 44px;
+    line-height: 54px;
+    width: 518px;
+    height: 108px;
+    padding-top: 83px;
+}
+
+.main-content p {
+    color: #544837;
+    font-size: 18px;
+    line-height: 28px;
+    width: 458px;
+    height: 95px;
+    padding-top: 30px;
+}
+
+/*не можу виставити згідно макету*/
+.btn-get-started {
+    display: inline-block;
+    background-color: #FF9900;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 15px 40px;
+}
+
+.btn-watch {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FF9900;
+    text-decoration: none;
+    padding: 15px 40px;
+}
