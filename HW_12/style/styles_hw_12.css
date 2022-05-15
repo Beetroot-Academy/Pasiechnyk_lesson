@@ -55,13 +55,13 @@ h2 {
     color: #545454;
 }
 
-.form_row__input {
+.form_row__input, .form_row__select{
     background-color: #FFFFFF;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
 }
 
-.form_row__input:hover {
+.form_row__input:hover, .form_row__select:hover{
     border: 1px solid blue;
     cursor: pointer;
 }
