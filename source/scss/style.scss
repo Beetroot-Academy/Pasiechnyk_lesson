@@ -61,7 +61,7 @@ a {
     color: $light-blue; 
 }
 
-.nav li + .nav li {
+.nav__link li + .nav__link li {
     margin-left: 40px;
 }
 
@@ -461,4 +461,43 @@ a {
 
 
 
+.container__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  &__title {
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    @include fluid-font(20px, 36px);
+    line-height: 65px;
+    letter-spacing: 0.36px;
+    color: white;
+    margin: 105px 0 0 55px;
+  }
+
+  &__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    @include fluid-font(20px, 40px);
+    line-height: 52px;
+    letter-spacing: 0.36px;
+    color: white;
+    padding-left: 55px;
+  }
+}
+
+.card__banana {
+  background-image: url(/assets/banana.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  
+.card__peach {
+  background-image: url(/assets/peach.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 

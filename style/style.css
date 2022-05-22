@@ -56,7 +56,7 @@ a {
   color: #4B5D68;
 }
 
-.nav li + .li {
+.nav__link li + .nav__link li {
   margin-left: 40px;
 }
 
