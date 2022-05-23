@@ -23,63 +23,51 @@
 
 body {
     background-image: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
-    width: 90%;
 }
 
 a {
     cursor: pointer;
     text-decoration: none;
 }
+
 .container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    box-sizing: border-box;
+    max-width: 1248px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .header {
     &__container {
-        padding: 62px 240px 0 240px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50px;
     }
 }
 
-.logo {
-    margin-top: 18px;
-}
-
-.nav {
-    margin: 27px 100px 0 0;
-}
-
-.nav>ul>li {
-    display: inline-block; 
-    font-family: 'Avenir Next LT Pro';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 160%; 
-    color: $light-blue; 
-}
-
-.nav__link li + .nav__link li {
-    margin-left: 40px;
-}
+.nav__item {
+        display: inline-block; 
+        font-family: 'Avenir Next LP Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%; 
+        color: $light-blue;
+        padding: 15px 40px 5px 0;
+    }
 
 .nav__item:visited {
     color: $light-blue;
 }
 
 .nav__item:hover {
-    font-family: 'Avenir Next LT Pro';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 160%;
-    color: $dark-blue;
-    text-decoration: none
-}
+        font-weight: 800;
+        color: $dark-blue;
+    }
 
-.btn--color {
+.demo-btn {
     font-family: 'Avenir Next LT Pro';
     font-style: normal;
     font-weight: 800;
@@ -87,20 +75,36 @@ a {
     line-height: 160%;
     color: $dark-blue;
     text-align: center;
+    letter-spacing: 0.005em;
     background-color: $white-color;
     border: $white-color;
     border-radius: 50px;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     padding: 17px 28px 17px 28px;
+
+    &__arrow {
+        color: $purple-blue;
+    }
 }
 
 /*main first section*/
-
 .first-section {
     &__container {
-        width: 80%;
-        margin: 47px 112px 0 240px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(/Progect1/assets/image/image_section1.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 60%;
+        padding: 120px 0 0 0 ;
     }
+
+    &__content {
+        padding: 0 500px 100px 0;
+    }
+
     &__title {
         font-family: 'Helvetica';
         font-style: normal;
@@ -117,7 +121,7 @@ a {
         font-size: 18px;
         line-height: 160%;
         color: $light-blue;
-        padding-top: 50px;
+        padding: 50px 200px 0 0;
     }
 
     &__btn {
@@ -133,23 +137,19 @@ a {
         padding: 16px 37px 16px 37px;
         margin-top: 30px;
     }
-
-    &__image {
-        margin-top: 90px;
-    }
 }
 
 /*second-section*/
 .second-section {
     &__container {
-        width: 80%;
+        display: flex;
         border-radius: 50px;
         background-color: $pink;
-        margin: 99px 240px 0 240px;
+        margin-top: 130px;
     }
 
-    &__image {
-        padding-bottom: 20px;
+    &__content {
+        padding: 125px 92px 125px 62px;
     }
 
     &__title {
@@ -159,7 +159,6 @@ a {
         font-size: 40px;
         line-height: 130%;
         color: $dark-blue;
-        margin: 125px 92px 50px 32px;
     }
 
     &__text {
@@ -169,15 +168,14 @@ a {
         font-size: 18px;
         line-height: 160%;
         color: $light-blue;
-        padding: 0 90px 70px 32px;
+        padding-top: 40px;
     }
 }
 
 /*third-container*/
 .third-container {
-    width: 80%;
-    margin: 100px auto 0 220px;
-    
+    padding-top: 140px;
+
     &__title {
         text-align: center;
         font-family: 'Helvetica';
@@ -203,28 +201,28 @@ a {
 }
 
 .bg-first-card {
-    background-image: url(/assets/image/background-1.png);
+    background-image: url(/Progect1/assets/image/background-1.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: contain;
 }
 
 .bg-second-card {
-    background-image: url(/assets/image/background-2.png);
+    background-image: url(/Progect1/assets/image/background-2.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: contain;
 }
 
 .bg-third-card {
-    background-image: url(/assets/image/background-3.png);
+    background-image: url(/Progect1/assets/image/background-3.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: contain;
 }
 
 .bg-fourth-card {
-    background-image: url(/assets/image/background-4.png);
+    background-image: url(/Progect1/assets/image/background-4.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: contain;
@@ -284,12 +282,10 @@ a {
 
 /*fourth-container*/
 .fourth-container {
-    width: 80%;
-    margin: 150px 240px 0 240px;
-    background-color: $purple-blue;
-    border-radius: 50px;
-    
     &__container {
+        background-color: $purple-blue;
+        border-radius: 50px;
+        margin-top: 150px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -307,19 +303,23 @@ a {
     }
 
     &__content {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        background-color: $white-color;
-        border-radius: 20px;
+        background: $white-color;
         box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
-        margin: 85px 246px 133px 246px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 85px 236px 133px 236px;
     }
 
     &__image {
         width: 90px;
         height: 90px;
-        padding: 60px;
+        padding: 60px 0 0 70px;
+    }
+
+    &__quote {
+        padding: 80px 70px 50px 30px;
     }
 
     &__subtitle {
@@ -331,19 +331,6 @@ a {
         align-items: center;
         letter-spacing: 0.005em;
         color: $dark-blue;
-        padding-top: 80px;
-    }
-
-    &__text {
-        font-family: 'Avenir Next LT Pro';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 180%;
-        color: $light-blue;
-        padding-top: 19px;
-        padding-right: 70px;
-        padding-bottom: 50px;
     }
 
     &__link {
@@ -356,13 +343,23 @@ a {
         letter-spacing: 0.01em;
         color: $purple-blue;
     }
+
+    &__text {
+        font-family: 'Avenir Next LT Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+        color: $light-blue;
+        padding-top: 19px;
+    } 
 }
 
 /*footer*/
 .footer {
-    width: 80%;
-    margin-left: 240px;
-
+        margin-top: 150px;
+        border-top: 2px solid $purple-blue;
+        
     &__title {
         font-family: 'Helvetica';
         font-style: normal;
@@ -459,45 +456,4 @@ a {
     color: $dark-blue;
 }
 
-
-
-.container__cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-  &__title {
-    font-family: 'Yellowtail';
-    font-style: normal;
-    font-weight: 400;
-    @include fluid-font(20px, 36px);
-    line-height: 65px;
-    letter-spacing: 0.36px;
-    color: white;
-    margin: 105px 0 0 55px;
-  }
-
-  &__text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    @include fluid-font(20px, 40px);
-    line-height: 52px;
-    letter-spacing: 0.36px;
-    color: white;
-    padding-left: 55px;
-  }
-}
-
-.card__banana {
-  background-image: url(/assets/banana.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-  
-.card__peach {
-  background-image: url(/assets/peach.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
 

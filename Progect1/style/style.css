@@ -19,7 +19,6 @@
 
 body {
   background-image: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
-  width: 90%;
 }
 
 a {
@@ -28,36 +27,29 @@ a {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  box-sizing: border-box;
+  max-width: 1248px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .header__container {
-  padding: 62px 240px 0 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
 }
 
-.logo {
-  margin-top: 18px;
-}
-
-.nav {
-  margin: 27px 100px 0 0;
-}
-
-.nav > ul > li {
+.nav__item {
   display: inline-block;
-  font-family: "Avenir Next LT Pro";
+  font-family: "Avenir Next LP Pro";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 160%;
   color: #4B5D68;
-}
-
-.nav__link li + .nav__link li {
-  margin-left: 40px;
+  padding: 15px 40px 5px 0;
 }
 
 .nav__item:visited {
@@ -65,16 +57,11 @@ a {
 }
 
 .nav__item:hover {
-  font-family: "Avenir Next LT Pro";
-  font-style: normal;
   font-weight: 800;
-  font-size: 16px;
-  line-height: 160%;
   color: #212353;
-  text-decoration: none;
 }
 
-.btn--color {
+.demo-btn {
   font-family: "Avenir Next LT Pro";
   font-style: normal;
   font-weight: 800;
@@ -82,17 +69,31 @@ a {
   line-height: 160%;
   color: #212353;
   text-align: center;
+  letter-spacing: 0.005em;
   background-color: #FFFFFF;
   border: #FFFFFF;
   border-radius: 50px;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   padding: 17px 28px 17px 28px;
 }
+.demo-btn__arrow {
+  color: #9C69E2;
+}
 
 /*main first section*/
 .first-section__container {
-  width: 80%;
-  margin: 47px 112px 0 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/Progect1/assets/image/image_section1.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 60%;
+  padding: 120px 0 0 0;
+}
+.first-section__content {
+  padding: 0 500px 100px 0;
 }
 .first-section__title {
   font-family: "Helvetica";
@@ -109,7 +110,7 @@ a {
   font-size: 18px;
   line-height: 160%;
   color: #4B5D68;
-  padding-top: 50px;
+  padding: 50px 200px 0 0;
 }
 .first-section__btn {
   font-family: "Avenir Next LT Pro";
@@ -124,19 +125,16 @@ a {
   padding: 16px 37px 16px 37px;
   margin-top: 30px;
 }
-.first-section__image {
-  margin-top: 90px;
-}
 
 /*second-section*/
 .second-section__container {
-  width: 80%;
+  display: flex;
   border-radius: 50px;
   background-color: rgba(240, 99, 184, 0.15);
-  margin: 99px 240px 0 240px;
+  margin-top: 130px;
 }
-.second-section__image {
-  padding-bottom: 20px;
+.second-section__content {
+  padding: 125px 92px 125px 62px;
 }
 .second-section__title {
   font-family: "Helvetica";
@@ -145,7 +143,6 @@ a {
   font-size: 40px;
   line-height: 130%;
   color: #212353;
-  margin: 125px 92px 50px 32px;
 }
 .second-section__text {
   font-family: "Avenir Next LT Pro";
@@ -154,13 +151,12 @@ a {
   font-size: 18px;
   line-height: 160%;
   color: #4B5D68;
-  padding: 0 90px 70px 32px;
+  padding-top: 40px;
 }
 
 /*third-container*/
 .third-container {
-  width: 80%;
-  margin: 100px auto 0 220px;
+  padding-top: 140px;
 }
 .third-container__title {
   text-align: center;
@@ -185,28 +181,28 @@ a {
 }
 
 .bg-first-card {
-  background-image: url(/assets/image/background-1.png);
+  background-image: url(/Progect1/assets/image/background-1.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
 }
 
 .bg-second-card {
-  background-image: url(/assets/image/background-2.png);
+  background-image: url(/Progect1/assets/image/background-2.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
 }
 
 .bg-third-card {
-  background-image: url(/assets/image/background-3.png);
+  background-image: url(/Progect1/assets/image/background-3.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
 }
 
 .bg-fourth-card {
-  background-image: url(/assets/image/background-4.png);
+  background-image: url(/Progect1/assets/image/background-4.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
@@ -261,13 +257,10 @@ a {
 }
 
 /*fourth-container*/
-.fourth-container {
-  width: 80%;
-  margin: 150px 240px 0 240px;
+.fourth-container__container {
   background-color: #9C69E2;
   border-radius: 50px;
-}
-.fourth-container__container {
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -283,18 +276,21 @@ a {
   padding: 109px 0 0 93px;
 }
 .fourth-container__content {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  background-color: #FFFFFF;
-  border-radius: 20px;
+  background: #FFFFFF;
   box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
-  margin: 85px 246px 133px 246px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 85px 236px 133px 236px;
 }
 .fourth-container__image {
   width: 90px;
   height: 90px;
-  padding: 60px;
+  padding: 60px 0 0 70px;
+}
+.fourth-container__quote {
+  padding: 80px 70px 50px 30px;
 }
 .fourth-container__subtitle {
   font-family: "Avenir Next LT Pro";
@@ -305,18 +301,6 @@ a {
   align-items: center;
   letter-spacing: 0.005em;
   color: #212353;
-  padding-top: 80px;
-}
-.fourth-container__text {
-  font-family: "Avenir Next LT Pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 180%;
-  color: #4B5D68;
-  padding-top: 19px;
-  padding-right: 70px;
-  padding-bottom: 50px;
 }
 .fourth-container__link {
   font-family: "Avenir Next LT Pro";
@@ -328,11 +312,20 @@ a {
   letter-spacing: 0.01em;
   color: #9C69E2;
 }
+.fourth-container__text {
+  font-family: "Avenir Next LT Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  color: #4B5D68;
+  padding-top: 19px;
+}
 
 /*footer*/
 .footer {
-  width: 80%;
-  margin-left: 240px;
+  margin-top: 150px;
+  border-top: 2px solid #9C69E2;
 }
 .footer__title {
   font-family: "Helvetica";

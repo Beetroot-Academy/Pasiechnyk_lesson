@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/resetcss/reset.css">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/Progect1/style/resetcss/reset.css">
+    <link rel="stylesheet" href="/Progect1/style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Document</title>
+    <title>Project1</title>
 </head>
 <body>
     <header class="header">
         <div class="container header__container">
-            <div class="logo">
-                <img src="/assets/image/Logo.png" alt="logo">
-            </div>
+            <a href="#">
+                <img src="/Progect1/assets/image/Logo.png" alt="Logo">
+            </a>
             <nav class="nav">
                 <ul nav__link>
                     <li class="nav__item"><a href="#">About</a></li>
@@ -23,32 +23,30 @@
                     <li class="nav__item"><a href="#">Signup</a></li>
                 </ul>
             </nav>
-            <div>
-                <button class="btn btn--color">Request Demo <span class="material-symbols-outlined">arrow_right_alt</span></button>
-            </div>
+            <button class="demo-btn">Request Demo <span class="demo-btn__arrow material-symbols-outlined">arrow_right_alt</span></button>
         </div>
     </header>
     <main>
         <section class="first-section">
             <div class="container first-section__container">
-                <div>
+                <div class="first-section__content">
                     <h1 class="first-section__title">Save your data storage here.</h1>
                     <p class="first-section__text">Data Warehouse is a data storage area that has been
                     tested for security, so you can store your data here
                     safely but not be afraid of being stolen by others.</p>
                     <button class="btn first-section__btn">Learn more</button>
                 </div>
-                <div class="first-section__image">
-                    <img src="/assets/image/image_section1.png" alt="image_section1">
-                </div>
+                <!--<div class="first-section__image">
+                    <img src="/Progect1/assets/image/image_section1.png" alt="image_section1">
+                </div>-->
             </div>
         </section>
         <section class="second-section">
             <div class="container second-section__container">
                 <div class="second-section__image">
-                    <img src="/assets/image/image_section2.png" alt="image_section2">
+                    <img src="/Progect1/assets/image/image_section2.png" alt="image_section2">
                 </div>
-                <div>
+                <div class="second-section__content">
                     <h2 class="second-section__title">We are a high-level data storage bank</h2>
                     <p class="second-section__text">The place to store various data that you can access at any time through the internet  and where you can carry it. 
                     This very flexible storage area has a high level of security. To enter into your own data you must enter the password 
@@ -56,8 +54,8 @@
                 </div>
             </div>
         </section>
-        <section class="container third-container">
-            <div class="third-container__container">
+        <section class="third-container">
+            <div class="container third-container__container">
                 <div>
                     <h2 class="third-container__title">Features</h2>
                     <p class="third-container__text">Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</p>
@@ -65,7 +63,7 @@
                 <div class="container cards">
                     <div class="card bg-first-card">
                         <div class="card__imeg">
-                            <img src="/assets/image/image_section3 1.png" alt="image_section3">
+                            <img src="/Progect1/assets/image/image_section3 1.png" alt="image_section3">
                         </div>
                         <div>
                             <h4 class="card__title">Search Data</h4>
@@ -75,7 +73,7 @@
                     </div>
                     <div class="card bg-second-card">
                         <div class="card__imeg">
-                            <img src="/assets/image/image_section3 2.png" alt="image_section3">
+                            <img src="/Progect1/assets/image/image_section3 2.png" alt="image_section3">
                         </div>
                         <div>
                             <h4 class="card__title">24 Hours Access</h4>
@@ -87,7 +85,7 @@
                     </div>
                     <div class="card bg-third-card">
                         <div class="card__imeg">
-                            <img src="/assets/image/image_section3 3.png" alt="image_section3">
+                            <img src="/Progect1/assets/image/image_section3 3.png" alt="image_section3">
                         </div>
                         <div>
                             <h4 class="card__title">Print Out</h4>
@@ -98,7 +96,7 @@
                     </div>
                     <div class="card bg-fourth-card">
                         <div class="card__imeg">
-                            <img src="/assets/image/image_section3 4.png" alt="image_section3">
+                            <img src="/Progect1/assets/image/image_section3 4.png" alt="image_section3">
                         </div>
                         <div>
                             <h4 class="card__title">Security Code</h4>
@@ -118,15 +116,16 @@
                 </div>
                 <div class="fourth-container__content">
                     <div class="fourth-container__image">
-                        <img src="/assets/image/image_section4.png" alt="image_section4">
+                        <img src="/Progect1/assets/image/image_section4.png" alt="image_section4">
                     </div>
-                    <div>
+                    <blockquote class="fourth-container__quote">
                         <h5 class="fourth-container__subtitle">John Fang</h5>
                         <a class="first-section__link" href="wordfaang.com" class="testimonial-item__link">wordfaang.com</a>
                         <p class="fourth-container__text">Suspendisse ultrices at diam lectus nullam. 
                         Nisl, sagittis viverra enim erat tortor ultricies massa turpis. 
                         Arcu pulvinar aenean nam laoreet nulla.</p>
-                    </div>
+                    </blockquote>
+                        
                 </div>
             </div>
         </section>
