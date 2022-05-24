@@ -18,10 +18,6 @@ let circleRadius = prompt("Enter the radius of the circle.");
 let circleArea = Math.PI * Math.pow(circleRadius, 2);
 alert(`Area of the circle is equal ${circleArea}`);
 
-// Запитай у користувача відстань в кілометрах між двома містами і за скільки годин він хоче дістатися. 
-Порахуй швидкість, з якою необхідно рухатися, щоб встигнути вчасно.
-
-
     //    Створи HTML-файл, в ньому пропиши всі можливі способи використання JS;
     //        в body html файлу, підключення окремого js файлу через head
 
