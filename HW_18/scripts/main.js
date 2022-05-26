@@ -18,8 +18,8 @@ alert(+a + b);
 
 // Користувач вказує обсяг флешки в Гб. Програма повинна порахувати скільки файлів розміром в 820 Мб поміщається на флешку.
 let sizeFlashDrive = prompt("Вкажіть розмір флешки в ГБ");
-const sizeFile = 0.82;
-let amountFile = sizeFlashDrive / 0.82;
+const sizeFile = 1024 / 820;
+let amountFile = sizeFlashDrive * sizeFile;
 alert(Math.round(amountFile));
 
 // Користувач вводить суму грошей в гаманці і ціну однієї шоколадки. 
