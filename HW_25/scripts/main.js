@@ -166,13 +166,12 @@ Examples
 [1, 1, 2] ==> 2
 [17, 17, 3, 17, 17, 17, 17] ==> 3 */
 
+
 function stray(numbers) {
-   let strayChar = numbers[0];
-   
-    for(let i = 1; i < numbers.length; i++){
-     if(strayChar !== numbers[i]){
-     return strayChar = numbers[i];
-      }
-    }
-          return 0;
-    } 
+   let arr = numbers.sort();
+   if (arr[0] !== arr[1]) {
+   return arr[0];
+   } else {
+      return arr[arr.length - 1];
+   }
+}
