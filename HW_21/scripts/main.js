@@ -27,12 +27,35 @@ let shoppingList = [
    price: 532,
 }
 ];
+
+//Виводити весь список на екран таким чином, щоб спочатку йшли продукти, що ще не придбані, а потім - ті, що вже придбали.
+
 function isBought (shoppingList) {
    return shoppingList.sort ((a, b) => a.bought - b.bought)
 }
 console.log(isBought(shoppingList));
 
+//Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
 
+function isBuy(shoppingList, name) {
+   shoppingList.forEach(element => {
+      if(element.name == name) {
+         element.bought = true;
+      }
+      return shoppingList;
+   });
+}
+console.log(isBuy(shoppingList, 'cup'));
 
-   
+//Створення списку (не) придбаних продуктів.
+
+function notBuy(shoppingList) {
+   let list = shoppingList.filter((prod) => prod.bought == false);
+   return list;
+}
+console.log(notBuy(shoppingList));
+
+// норма
+/*Видалення продукту зі списку (видалення повинно проводитися шляхом створення нового масиву, 
+   в якому продукт, що ми шукаємо, буде відсутнім) */
 
