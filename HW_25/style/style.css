@@ -1,2 +1,96 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 200px;
+}
 
+.second_task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn_open, .btn_close {
+  background-color: #353535;
+  border: 2px solid #353535;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 32px;
+  margin: 40px;
+}
+
+.modal {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 50px;
+  color: #353535;
+}
+
+.active {
+  visibility: visible;
+}
+
+.third_task {
+  width: 200px;
+  height: 500px;
+  border-radius: 20px;
+  background-color: #4b4b4b;
+  border: 10px solid gray;
+}
+
+.traffic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.traffic__item {
+  position: relative;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+.traffic__item::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-color: gray;
+}
+.traffic__item.active::before {
+  display: none;
+}
+.traffic__red {
+  background-color: red;
+}
+.traffic__yellow {
+  background-color: yellow;
+}
+.traffic__green {
+  background-color: green;
+}
+
+.traffic_btn {
+  margin: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  background-color: gray;
+  border: 2px solid gray;
+  color: black;
+}
+.traffic_btn:hover {
+  color: whitesmoke;
+}
 /*# sourceMappingURL=style.css.map */

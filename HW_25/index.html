@@ -11,8 +11,23 @@
 </head>
 <body>
     <header></header>
-    <main>
+    <main class="main">
         <section class="first_task"></section>
+        <section class="second_task">
+            <button class="btn_open">Тицни мене</button>
+            <div class="modal">
+                <p>Тицнули?</p>
+                <button class="btn_close">То закрий вже</button>
+            </div>
+        </section>
+        <section class="third_task">
+            <div class="traffic">
+                <div class="traffic__item traffic__red"></div>
+                <div class="traffic__item traffic__yellow"></div>
+                <div class="traffic__item traffic__green"></div>
+            </div>
+            <button onclick="changeColorTraffic()" class="traffic_btn">change color</button>
+        </section>
     </main>
     <footer></footer>
 </body>
