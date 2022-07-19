@@ -12,17 +12,18 @@ img {
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1170px;
   width: 100%;
-  padding: 0;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
 .header {
-  background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
   position: absolute;
-  width: 100%;
-  height: 800px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
 }
 .header__container {
   display: flex;
@@ -32,6 +33,7 @@ img {
 }
 .header__list {
   display: flex;
+  gap: 70px;
 }
 .header__link {
   font-family: "Source Sans Pro";
@@ -39,7 +41,6 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  padding-left: 70px;
 }
 .header__link:visited {
   color: #ffffff;
@@ -76,6 +77,19 @@ img {
   height: 800px;
 }
 
+.hero {
+  position: relative;
+}
+.hero::before {
+  content: "";
+  background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
+  position: absolute;
+  width: 100%;
+  height: 800px;
+}
+.hero__slide {
+  z-index: 1;
+}
 .hero__title {
   font-family: "Montserrat";
   font-style: normal;
@@ -125,6 +139,10 @@ img {
   color: #000000;
   border: 1px solid #2c4058;
   padding: 16px 40px;
+  background-color: #ffffff;
+}
+.btn:hover {
+  background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
 }
 
 .projects__title {
@@ -135,9 +153,10 @@ img {
   display: flex;
   align-items: center;
   padding-top: 120px;
+  gap: 100px;
 }
-.project__content {
-  padding: 0 100px;
+.project__photo {
+  width: 100%;
 }
 .project__title {
   margin-bottom: 20px;
@@ -149,13 +168,46 @@ img {
   font-size: 18px;
   line-height: 30px;
   color: #2c4058;
+  padding-bottom: 50px;
 }
 .project__btn {
-  margin-top: 56px;
+  margin-bottom: 60px;
 }
 .project__location {
   display: block;
-  padding-top: 60px;
+}
+
+.shadow_one {
+  position: relative;
+}
+.shadow_one::before {
+  content: "";
+  bottom: 30px;
+  left: -215px;
+  z-index: -1;
+  display: block;
+  position: absolute;
+  max-width: 585px;
+  min-height: 470px;
+  width: 100%;
+  height: 470px;
+  background-color: #55b7ff;
+}
+
+.shadow_two {
+  position: relative;
+}
+.shadow_two::after {
+  content: "";
+  bottom: 30px;
+  right: -215px;
+  z-index: -1;
+  display: block;
+  position: absolute;
+  max-width: 585px;
+  width: 100%;
+  height: 470px;
+  background-color: #7e5aff;
 }
 
 .title-white {
@@ -168,13 +220,14 @@ img {
   color: #ffffff;
 }
 
-/*.splide__arrows.splide__arrow--custom {
+.splide__arrows.splide__arrow--custom {
   border-radius: 50%;
   opacity: 0.5;
   border: 1px solid #ffffff;
   color: #ffffff;
   background-color: #55b7ff;
-}*/
+}
+
 .news {
   background-image: url(/project_2/assets/image/main_back_2.png);
   background-repeat: no-repeat;
@@ -184,12 +237,21 @@ img {
 }
 .news__title {
   padding-top: 150px;
+  padding-bottom: 90px;
 }
 .news__track {
-  padding-top: 90px;
+  width: 1170px;
+  margin: auto;
 }
-.news__slide {
-  padding-left: 80px;
+.news__list {
+  gap: 30px;
+}
+.news__photos {
+  width: 370px;
+}
+.news__new {
+  background-color: #ffffff;
+  width: 370px;
 }
 .news__subtitle {
   font-family: "Montserrat";
@@ -198,7 +260,7 @@ img {
   font-size: 22px;
   line-height: 27px;
   color: #2c4058;
-  padding-top: 24px;
+  padding: 20px;
 }
 .news__text {
   font-family: "Open Sans";
@@ -207,7 +269,7 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: #2c4058;
-  padding-top: 15px;
+  padding: 0 20px;
 }
 
 .gallery {
@@ -245,7 +307,6 @@ img {
 }
 
 .contacts {
-  background-image: url(/project_2/assets/image/main_map.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -265,11 +326,10 @@ img {
   margin-right: 415px;
 }
 .contacts__modal {
-  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 60px;
+  gap: 60px;
 }
 .contacts__list {
   font-family: "FontAwesome";
@@ -293,7 +353,6 @@ img {
   border-right: none;
   opacity: 0.5;
   padding-bottom: 20px;
-  width: 310px;
 }
 .contacts__mailinput {
   opacity: 0.2;
@@ -302,7 +361,6 @@ img {
   border-left: none;
   border-right: none;
   padding-bottom: 20px;
-  width: 310px;
 }
 .contacts__btn {
   margin-top: 30px;
