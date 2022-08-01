@@ -1,0 +1,84 @@
+body {
+  font-family: "Roboto";
+  font-weight: normal;
+  text-align: center;
+  color: #ffffff;
+  max-width: 100%;
+  font-size: 20px;
+}
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.home__video {
+  padding-top: 80px;
+}
+.title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 30px;
+  text-align: left !important;
+}
+.search {
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.characters__cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 15px;
+  padding-bottom: 50px;
+}
+.card {
+  background: #232323;
+  margin: auto;
+  color: #ffffff;
+  width: 216px;
+  height: 380px;
+  border-radius: 4px;
+}
+.card__img {
+  max-width: 216px;
+  min-height: 324px;
+  background-position: center;
+  border-radius: 4px;
+}
+.characters__subtitle {
+  padding: 16px 24px 17px 20px;
+  font-size: 16px !important;
+}
+.card:hover {
+  
+  color: #ffffff;
+  border-left: 10px solid transparent;
+}
+.loading {
+  max-width: 150px;
+  position: absolute;
+  padding-top: 200px;
+}
+.character__container {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+.character__subtitle {
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+.character__text {
+  font-size: 20px;
+  padding: 50px;
+}
