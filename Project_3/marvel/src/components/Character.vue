@@ -1,7 +1,11 @@
 <template>
   <div class="container">
     <div v-if="!character">
-      <img class="loading" src="https://i.gifer.com/embedded/download/4M4z.gif" alt="loading">
+      <img
+        class="loading"
+        src="https://i.gifer.com/embedded/download/4M4z.gif"
+        alt="loading"
+      />
     </div>
     <div v-else class="character__container">
       <div class="character__img">
@@ -31,7 +35,6 @@ export default {
   },
   created() {
     this.$store.dispatch("getCharacter", this.$route.params.id);
-    //this.getImage();
   },
   computed: {
     ...mapState({
@@ -39,14 +42,8 @@ export default {
       preUrl: (state) => state.url,
     }),
   },
-  methods: {
-    //getImage: function () {
-      //this.url = `${this.preUrl}/${this.size}`;
-    //},
-  },
+  methods: {},
 };
 </script>
 
-<style>
-
-</style>
+<style></style>

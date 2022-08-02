@@ -11,11 +11,8 @@ export default new Vuex.Store({
     character: {},
     url: "",
   },
-  getters: {
-    
-  },
+  getters: {},
   mutations: {
-
     getCharacters(state) {
       state.characters = [];
       axios
@@ -40,11 +37,7 @@ export default new Vuex.Store({
         )
         .then((result) => {
           console.log("getCharacter", result);
-          
-          //result.data.data.results.forEach((item) => {
-            state.character = result.data.data.results[0];
-            //state.url = `${item.thumbnail.path}/`;
-          //});
+          state.character = result.data.data.results[0];
         })
         .catch((error) => {
           console.log(error);

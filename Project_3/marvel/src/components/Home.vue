@@ -1,14 +1,61 @@
 <template>
-  <div class=home__video>
-    <iframe 
-      width="1252"
-      height="704"
-      src="https://www.youtube.com/embed/JVuq8BHIlbQ?list=PLK5HARgNfgj-AFqP-9VVYdm1ksy69HA__"
-      title="Marvel Studios' Thor: Love and Thunder | Team"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+  <div class="container">
+    <div class="home">
+      <div class="home__video">
+        <iframe
+          src="https://www.youtube.com/embed/JVuq8BHIlbQ?list=PLK5HARgNfgj-AFqP-9VVYdm1ksy69HA__"
+          title="Marvel Studios' Thor: Love and Thunder | Team"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="home__video">
+        <iframe
+          src="https://www.youtube.com/embed/JVuq8BHIlbQ?list=PLK5HARgNfgj-AFqP-9VVYdm1ksy69HA__"
+          title="Marvel Studios' Thor: Love and Thunder | Team"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="home__video">
+        <iframe
+          src="https://www.youtube.com/embed/JVuq8BHIlbQ?list=PLK5HARgNfgj-AFqP-9VVYdm1ksy69HA__"
+          title="Marvel Studios' Thor: Love and Thunder | Team"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="home__video">
+        <iframe
+          src="https://www.youtube.com/embed/JVuq8BHIlbQ?list=PLK5HARgNfgj-AFqP-9VVYdm1ksy69HA__"
+          title="Marvel Studios' Thor: Love and Thunder | Team"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="home__video">
+        <iframe
+          src="https://www.youtube.com/embed/JVuq8BHIlbQ?list=PLK5HARgNfgj-AFqP-9VVYdm1ksy69HA__"
+          title="Marvel Studios' Thor: Love and Thunder | Team"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="home__video">
+        <iframe
+          src="https://www.youtube.com/embed/JVuq8BHIlbQ?list=PLK5HARgNfgj-AFqP-9VVYdm1ksy69HA__"
+          title="Marvel Studios' Thor: Love and Thunder | Team"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -18,4 +65,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+</style>
