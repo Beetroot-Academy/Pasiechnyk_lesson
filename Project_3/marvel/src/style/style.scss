@@ -25,6 +25,7 @@ img {
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 .home__video {
   position: relative;
@@ -76,6 +77,17 @@ img {
   color: #ffffff;
   border-left: 10px solid transparent;
 }
+@media (max-width: 425px) {
+  
+  .characters__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
 
 /*character*/
 .loading {
@@ -89,6 +101,7 @@ img {
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 .character__subtitle {
   font-size: 36px;

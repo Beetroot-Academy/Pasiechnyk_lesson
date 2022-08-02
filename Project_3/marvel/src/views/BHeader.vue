@@ -32,6 +32,7 @@
         </v-tabs>
       </template>
     </v-app-bar>
+    <BFooter />
   </v-card>
 </template>
 
